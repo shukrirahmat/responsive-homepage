@@ -1,5 +1,15 @@
-.test {
-    font-size: 20px;
-    font-weight: bold;
-    color: crimson;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header, .footer {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header, .footer, .main {
+    max-width: 2000px;
+    margin: 0 auto;
 }

@@ -1,3 +1,3 @@
-# template-repo
+# Responsive Homepage
 
-Template for starting a project
+A mock homepage that are acceptable at multiple screen size
