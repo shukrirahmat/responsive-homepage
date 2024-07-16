@@ -13,3 +13,22 @@
     max-width: 2000px;
     margin: 0 auto;
 }
+
+.profile {
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.header {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    background-color: aliceblue;
+    max-width: 400px;
+    color: black;
+}
