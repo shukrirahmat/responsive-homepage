@@ -1,4 +1,15 @@
+@font-face {
+    font-family: "DMSerifDisplay";
+    src: url(fonts/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "LexendDeca";
+    src: url(fonts/LexendDeca-Light.ttf);
+}
+
 * {
+    font-family: "LexendDeca",sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -15,12 +26,27 @@
 }
 
 .profile {
-    max-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img {
+    max-width: 400px;
+    height: 400px;
     object-fit: cover;
 }
 
+.profile p {
+    position: absolute;
+    bottom: 2px;
+    font-family: "DMSerifDisplay",sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 1px darkgray;
+}
+
 .header {
-    padding: 30px 40px;
+    padding: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,7 +54,33 @@
 }
 
 .about {
-    background-color: aliceblue;
-    max-width: 400px;
+    background-color: white;
+    max-width: 500px;
     color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about .title {
+    font-size: 30px;
+    font-family: "DMSerifDisplay", sans-serif;
+}
+
+.btncontainer {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btncontainer img {
+    width: 20px;
+    height: 20px;
 }
