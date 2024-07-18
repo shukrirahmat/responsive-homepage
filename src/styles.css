@@ -20,9 +20,14 @@
     color: white;
 }
 
-.header, .footer, .main {
+.header, .footer{
     margin: 0 auto;
     padding: 50px;
+}
+
+.main {
+    margin: 0 auto;
+    padding: 100px 50px;
 }
 
 .profile {
@@ -47,14 +52,20 @@
 
 .panel-wrapper {
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .header .panel-wrapper {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
     align-items: center;
 
+}
+
+.main .panel-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .about {
@@ -86,4 +97,15 @@ a {
 .btncontainer img {
     width: 20px;
     height: 20px;
+}
+
+.projectcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.project {
+    height: 200px;
+    border: solid 2px black;
 }
