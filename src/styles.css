@@ -4,12 +4,17 @@
 }
 
 @font-face {
-    font-family: "LexendDeca";
+    font-family: "LexendDecaLight";
     src: url(fonts/LexendDeca-Light.ttf);
 }
 
+@font-face {
+    font-family: "LexendDecaRegular";
+    src: url(fonts/LexendDeca-Regular.ttf);
+}
+
 * {
-    font-family: "LexendDeca",sans-serif;
+    font-family: "LexendDecaLight",sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -68,6 +73,13 @@
     gap: 20px;
 }
 
+.footer .panel-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
+
 .about {
     background-color: white;
     color: black;
@@ -78,11 +90,11 @@
 }
 
 .title {
-    font-size: 30px;
+    font-size: 40px;
     font-family: "DMSerifDisplay", sans-serif;
 }
 
-.btncontainer {
+.about .links {
     align-self: flex-end;
     display: flex;
     flex-direction: row;
@@ -94,7 +106,7 @@ a {
     text-decoration: none;
 }
 
-.btncontainer img {
+.about .links img {
     width: 20px;
     height: 20px;
 }
@@ -148,4 +160,43 @@ a {
 .projectdetails .description {
     grid-column: 1/-1;
     font-size: 14px;
+}
+
+
+.footer img {
+    max-width: 550px;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer .contactme {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contactme .icon {
+    width: 25px;
+    filter:invert(100%);
+    vertical-align:middle;
+    margin-right: 10px;
+    padding: 5px 0;
+}
+
+.contactme .links {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.contactme .links img {
+    width: 30px;
+}
+
+.footer .text {
+    font-family: "LexendDecaRegular", sans-serif;
+}
+
+.xlogo {
+    transform: scale(80%);
 }
