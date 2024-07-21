@@ -42,12 +42,10 @@
 
 .footer{
     margin: 0 auto;
-    padding: 50px;
 }
 
 .main {
     margin: 0 auto;
-    padding: 100px 50px;
 }
 
 .profile {
@@ -73,29 +71,29 @@
     text-shadow: 1px 1px darkgray;
 }
 
-.panel-wrapper {
-    max-width: 1000px;
+.content-wrapper {
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 50px;
 }
 
 
-.header .panel-wrapper {
+.header .content-wrapper {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     z-index: 2;
-    padding-top: 50px;
 
 }
 
-.main .panel-wrapper {
+.main .content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.footer .panel-wrapper {
+.footer .content-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
