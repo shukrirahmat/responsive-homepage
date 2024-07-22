@@ -55,6 +55,7 @@
     color: white;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    float: left;
 }
 
 .profile img {
@@ -151,6 +152,7 @@ a {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    object-position: top;
 }
 
 .projectdetails {
@@ -165,7 +167,7 @@ a {
 
 .projectdetails .name {
     font-family: "DMSerifDisplay", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .projectdetails .links {
@@ -180,7 +182,6 @@ a {
 .projectdetails img {
     width: 20px;
     height: 20px;
-    object-fit: cover;
 }
 
 .projectdetails .description {
@@ -229,11 +230,12 @@ a {
 
 @media (max-width: 1000px) {
     .content-wrapper {
-        max-width: 900px;
+        max-width: 800px;
+        padding: 50px 40px;
     }
 
-    .main .content-wrapper {
-        padding: 50px 100px;
+    .footer .content-wrapper {
+        padding: 50px 20px;
     }
 
     .projectcontainer {
@@ -242,20 +244,45 @@ a {
     }
 
     .header .content-wrapper {
-        padding: 50px 100px;
         display: block;
+        position: relative;
+    }
+
+    .header .about {
+        display: block;
+        padding-top: 50px;
+        margin-top: 100px;
+    }
+
+    .header .about p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .title {
+        font-size: 35px;
     }
 
     .header .profile {
-        float: left;
+        margin-left: -20px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+ 
+    .header .profile img {
+        width: 320px;
     }
 
-    .header .profile img {
-        width: 350px;
+    .header .profile p {
+        font-size: 45px;
+        position: absolute;
+        top: 20px;
+        left: 42vw;
+        white-space: nowrap;
     }
 
     .footer .bottompic {
-        max-width: 250px;
+        width: max(250px, 50%);
     }
 
     .footer .content-wrapper {
